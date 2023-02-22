@@ -7,14 +7,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import WorkIcon from '@mui/icons-material/Work';
-
 import Button from '@mui/material/Button';
-
 import MenuItem from '@mui/material/MenuItem';
 
+import WorkIcon from '@mui/icons-material/Work';
 
-const pages = ['Home','About', 'Services', 'Contact'];
+const pages = ['Home','About','Services', 'Contact'];
+
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -23,7 +22,6 @@ function NavBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
- 
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -35,25 +33,9 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Typography
-            variant="h8"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            <WorkIcon/>
-          </Typography>
+          <WorkIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="/"
@@ -62,12 +44,12 @@ function NavBar() {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            Swapal Faciltators and Promoters
+            Swapal Facilitators &amp; Promoters Pvt.Ltd
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -98,19 +80,16 @@ function NavBar() {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-             
-              
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
-                  <Typography textAlign="center" >{page}</Typography>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Typography
-            variant="h6"
-            
+            variant="h8"
             component="a"
             href=""
             sx={{
@@ -119,15 +98,14 @@ function NavBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
               textAlign:'center'
             }}
           >
-            Swapal Faciltators and Promoters
+            Swapal Facilitators &amp; Promoters Pvt.Ltd
           </Typography>
-          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -140,6 +118,7 @@ function NavBar() {
             ))}
           </Box>
 
+         
         </Toolbar>
       </Container>
     </AppBar>
