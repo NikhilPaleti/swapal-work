@@ -1,19 +1,35 @@
+import "./App.css";
 
-import './App.css';
-import Body from './Body';
-import Bottom from './Bottom';
-import Hero from './Hero';
-import NavBar from './NavBar';
+import Bottom from "./Bottom";
 
+import HomePage from "./HomePage";
+import NavBar from "./NavBar";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TrainingPage from "./TrainingPage";
+import FacilitationPage from "./FacilitationPage";
+import HydroponicsPage from "./HydroponicsPage";
+import ConstructionPage from "./ConstructionPage";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Hero/>
-      <Body/>
-      <Bottom/>
-    </div>
+    <>
+      <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/training" element={<TrainingPage />} />
+          <Route path="/hydroponics" element={<HydroponicsPage />} />
+          <Route
+            path="/constructionconsultancy"
+            element={<ConstructionPage />}
+          />
+          <Route path="/facilitation" element={<FacilitationPage />} />
+        </Routes>
+      </BrowserRouter>
+
+      <Bottom />
+    </>
   );
 }
 

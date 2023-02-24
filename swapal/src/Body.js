@@ -19,9 +19,9 @@ const Body = () => {
         <div
           style={{
             paddingTop: w > 420 ? "10vh" : "1vh",
-            paddingBottom: "5vh",
-            marginLeft: "2vw",
-            marginRight: "2vw",
+            paddingBottom: w>420?"5vh":"1vh",
+            marginLeft: "4vw",
+            marginRight: "4vw",
           }}
         >
           <Box sx={{ flexGrow: 1 }}>
@@ -33,7 +33,8 @@ const Body = () => {
                 sx={{ display: "flex", alignItems: "center" }}
               >
                 <img
-                  src={require("./assets/image4.jpg")}
+                  className="imgshadow"
+                  src={require("./assets/image5.jpg")}
                   style={{
                     height: "25vmax",
                     display: "block",
@@ -46,7 +47,7 @@ const Body = () => {
                 item
                 xs={12}
                 md={6}
-                sx={{ display: "flex", alignItems: "center" }}
+                sx={{ display: "flex", alignItems: "center",textAlign:w<420 && "center", marginTop:w<420 && "2vh" }}
               >
                 From making strategic decisions to delivering your requirements,
                 we are here to help. Using our expertise and deep understanding
@@ -57,173 +58,232 @@ const Body = () => {
           </Box>
         </div>
       </div>
+      <div>
+        <div
+          style={{
+            paddingTop: w > 420 ? "10vh" : "1vh",
+            paddingBottom: "5vh",
+            marginLeft: "4vw",
+            marginRight: "4vw",
+          }}
+        >
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={1}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                sx={{ display: "flex", alignItems: "center", textAlign:w<420 && "center", marginTop:w<420 && "2vh"}}
+              >
+                As one of the leading employment agencies for overseas jobs,
+                Swapal offers contingent and permanent job opportunities as well
+                as support with international relocation. Get in touch to book a
+                meeting
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                sx={{ display: "flex", alignItems: "center", marginTop:w<420 &&"2vh" }}
+              >
+                <img
+                  className="imgshadow"
+                  src={require("./assets/image6.jpg")}
+                  style={{
+                    height: "25vmax",
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                ></img>
+              </Grid>
+            </Grid>
+          </Box>
+        </div>
+      </div>
       <div
         style={{
           paddingTop: w > 420 ? "10vh" : "1vh",
           paddingBottom: w > 420 ? "10vh" : "1vh",
-          paddingLeft:'5vw',
-          paddingRight:'5vw'
+          paddingLeft: "5vw",
+          paddingRight: "5vw",
         }}
       >
-       
-          <Typography
+        <Typography
+          sx={{
+            fontSize: "4vmax",
+            textAlign: "center",
+            paddingBottom: w > 420 ? "10vh" : "5vh",
+            fontFamily: "Poppins",
+          }}
+        >
+          <div className="under">Services</div>
+        </Typography>
+
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid
+          className="imgshadow"
+            item
+            xs={12}
+            md={2.5}
             sx={{
-              fontSize: "4vmax",
+              display: "flex",
+              alignItems: "center",
               textAlign: "center",
+              flexDirection: "column",
+              background: "#C0EEF2",
               paddingBottom: "5vh",
-              fontFamily:'Poppins'
+              paddingLeft: "1vw",
+              paddingRight: "1vw",
+              margin: w > 420 ?"1vw":'2vmax',
+              marginBottom: w < 420 && "2vh",
+              borderRadius:'1rem'
             }}
           >
-            <div className="under">Services</div>
-            
-           
-            
-          </Typography>
-
-          <Grid container>
-            <Grid
-              item
-              xs={12}
-              md={3}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                background: "#ebebeb",
-                paddingBottom: "5vh",
-                paddingLeft:'1vw',
-                paddingRight:'1vw',
-                
-                
+            <Grid item xs={12} md={12}>
+              <VpnKeyIcon
+                sx={{ color: "#537FE7", fontSize: "4vmax", paddingTop: "3vh" }}
+              />
+            </Grid>
+            <div
+              style={{
+                fontWeight: "600",
+                textAlign: "center",
+                paddingBottom: "2vh",
               }}
             >
-              <Grid item xs={12} md={12}>
-                <VpnKeyIcon sx={{ color: "#1976d2", fontSize: "4vmax" ,paddingTop:'2vh'}} />
-              </Grid>
-              <div
-                style={{
-                  fontWeight: "600",
-                  textAlign: "center",
-                  paddingBottom: "2vh",
-                  
-                }}
-              >
-                Facilitation
-              </div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={3}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                background: "#ebebeb",
-                paddingBottom: "5vh",
-                paddingLeft:'1vw',
-                paddingRight:'1vw',
-               
-              }}
-            >
-              <Grid item xs={12} md={12}>
-                <Engineering sx={{ color: "#1976d2", fontSize: "4vmax", paddingTop:'2vh' }} />
-              </Grid>
-              <div
-                style={{
-                  fontWeight: "600",
-                  textAlign: "center",
-                  marginBottom: "2vh",
-                  background: "#ebebeb",
-                }}
-              >
-                Construction Consultancy
-              </div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={3}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                background: "#ebebeb",
-                paddingBottom: "5vh",
-                paddingLeft:'1vw',
-                paddingRight:'1vw',
-                
-              }}
-            >
-              <Grid item xs={12} md={12}>
-                <CastForEducationIcon
-                  sx={{ color: "#1976d2", fontSize: "4vmax",paddingTop:'2vh' }}
-                />
-              </Grid>
-              <div
-                style={{
-                  fontWeight: "600",
-                  textAlign: "center",
-                  marginBottom: "2vh",
-                }}
-              >
-                Training
-              </div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={3}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-
-                background: "#ebebeb",
-                paddingBottom: "5vh",
-                paddingLeft:'1vw',
-                paddingRight:'1vw',
-                
-              }}
-            >
-              <Grid item xs={12} md={12}>
-                <AgricultureIcon sx={{ color: "#1976d2", fontSize: "4vmax",paddingTop:'2vh' }} />
-              </Grid>
-              <div
-                style={{
-                  fontWeight: "600",
-                  textAlign: "center",
-                  marginBottom: "2vh",
-                }}
-              >
-                Hydroponics
-              </div>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </Grid>
+              Facilitation
+            </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </Grid>
-        </div>
-      
+          <Grid
+            item
+            className="imgshadow"
+            xs={12}
+            md={2.5}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+              flexDirection: "column",
+              background: "#C0EEF2",
+              paddingBottom: "5vh",
+              paddingLeft: "1vw",
+              paddingRight: "1vw",
+              margin: w > 420 ?"1vw":'2vmax',
+              marginBottom: w < 420 && "2vh",
+              borderRadius:'1rem'
+            }}
+          >
+            <Grid item xs={12} md={12}>
+              <Engineering
+                sx={{ color: "#537FE7", fontSize: "4vmax", paddingTop: "3vh" }}
+              />
+            </Grid>
+            <div
+              style={{
+                fontWeight: "600",
+                textAlign: "center",
+                marginBottom: "2vh",
+                background: "#C0EEF2",
+              }}
+            >
+              Construction Consultancy
+            </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </Grid>
+          <Grid
+            item
+            
+            className="imgshadow"
+            xs={12}
+            md={2.5}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+              flexDirection: "column",
+              background: "#C0EEF2",
+              paddingBottom: "5vh",
+              paddingLeft: "1vw",
+              paddingRight: "1vw",
+              margin: w > 420 ?"1vw":'2vmax',
+              marginBottom: w < 420 && "2vh",
+              borderRadius:'1rem'
+            }}
+          >
+            <Grid item xs={12} md={12}>
+              <CastForEducationIcon
+                sx={{ color: "#537FE7", fontSize: "4vmax", paddingTop: "3vh" }}
+              />
+            </Grid>
+            <div
+              style={{
+                fontWeight: "600",
+                textAlign: "center",
+                marginBottom: "2vh",
+              }}
+            >
+              Training
+            </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </Grid>
+          <Grid
+            item
+            className="imgshadow"
+            xs={12}
+            md={2.5}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+              flexDirection: "column",
+              background: "#C0EEF2",
+              paddingBottom: "5vh",
+              paddingLeft: "1vw",
+              paddingRight: "1vw",
+              margin: w > 420 ?"1vw":'2vmax',
+              marginBottom: w < 420 && "2vh",
+              borderRadius:'1rem'
+            }}
+          >
+            <Grid item xs={12} md={12}>
+              <AgricultureIcon
+                sx={{ color: "#537FE7", fontSize: "4vmax", paddingTop: "3vh" }}
+              />
+            </Grid>
+            <div
+              style={{
+                fontWeight: "600",
+                textAlign: "center",
+                marginBottom: "2vh",
+              }}
+            >
+              Hydroponics
+            </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </Grid>
+        </Grid>
+      </div>
+
       <div
         id="testimonial"
         style={{
           display: "flex",
-
+          color: "#E9F8F9",
           flexDirection: "column",
           paddingLeft: "5vw",
           paddingRight: "5vw",
           marginTop: "10vh",
-          background: "#1976d2",
+          background: "#537FE7",
           height: "auto",
 
           alignItems: "center",
-          fontSize: w > 420 ? "1.5rem" : "1rem",
+          fontSize: w > 420 ? "1.25rem" : "1rem",
         }}
       >
         <div
@@ -253,27 +313,34 @@ const Body = () => {
       <div
         id="contact"
         style={{
-          background: "white",
           paddingTop: w > 420 ? "15vh" : "5vh",
-          paddingBottom: "5vh",
+          paddingBottom:w>420 ?"10vh":"5vh",
         }}
       >
         <div
+        className="imgshadow"
           style={{
             color: "white",
             textAlign: "center",
             marginLeft: "auto",
             marginRight: "auto",
             display: "block",
-            background: "black",
-            height: w > 420 ? "25vh" : "30vh",
+            background: "#181823",
+            height: w > 420 ? "25vh" : "25vh",
             width: w > 420 ? "50vw" : "80vw",
-            paddingTop: "3vh",
+            paddingTop: "1vh",
+            paddingBottom: "1vh",
+            borderRadius:'2vmax'
           }}
         >
           <h2> Get started today</h2>
           <h4>Be a part of our journey</h4>
-          <Button variant="contained" sx={{fontFamily:'Poppins'}}>Contact</Button>
+          <Button
+            variant="contained"
+            sx={{ fontFamily: "Poppins", background: "#537FE7" }}
+          >
+            Contact
+          </Button>
         </div>
       </div>
     </>

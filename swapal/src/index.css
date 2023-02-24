@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color:#E9F8F9;
 }
 
 
@@ -11,8 +12,34 @@ body {
 
 
 .under {
-  -webkit-text-decoration: #1976d2 solid underline;
-  text-decoration:  #1976d2 solid underline;
+  -webkit-text-decoration:#537FE7 solid underline;
+  text-decoration:  #537FE7 solid underline;
   -webkit-text-underline-position: under;
   text-underline-position: under;
+}
+.imgshadow {
+  box-shadow: 8px 8px 10px #aaa;
+  
+}
+
+.glass{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr {
+  border: none;
+  border-top: 5px dotted #537FE7;
+  opacity: 0.5;
 }

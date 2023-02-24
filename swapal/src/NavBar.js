@@ -9,8 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-
-
+import { Outlet, Link } from "react-router-dom";
 
 const pages = ["Home", "About", "Services", "Contact"];
 
@@ -26,17 +25,17 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ }}>
+    <AppBar position="fixed" sx={{ background: "#537FE7", color: "#E9F8F9" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {window.innerWidth>420 &&
-          <img
-            src={require("./assets/logo.png")}
-            style={{
-              height: "5vmax",
-            }}
-          />
-}
+          {window.innerWidth > 420 && (
+            <img
+              src={require("./assets/logo.png")}
+              style={{
+                height: "5vmax",
+              }}
+            />
+          )}
 
           <Typography
             variant="h5"
@@ -46,7 +45,7 @@ function NavBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily:'Poppins',
+              fontFamily: "Poppins",
               fontWeight: 700,
               letterSpacing: ".1rem",
               color: "inherit",
@@ -68,7 +67,6 @@ function NavBar() {
               <MenuIcon />
             </IconButton>
             <Menu
-            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -84,12 +82,11 @@ function NavBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
-                  <Typography textAlign="center" >{page}</Typography>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -102,7 +99,7 @@ function NavBar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily:'Poppins',
+              fontFamily: "Poppins",
               fontWeight: 700,
               letterSpacing: ".1rem",
               color: "inherit",
@@ -112,8 +109,15 @@ function NavBar() {
           >
             Swapal Facilitators &amp; Promoters Pvt.Ltd
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              position: "absolute",
+              right: "0",
+            }}
+          >
+            {/* {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -121,7 +125,27 @@ function NavBar() {
               >
                 {page}
               </Button>
-            ))}
+            ))} */}
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                Home
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                About
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                Services
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                Contact
+              </Typography>
+            </MenuItem>
           </Box>
         </Toolbar>
       </Container>

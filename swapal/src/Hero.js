@@ -26,24 +26,26 @@ const Hero = () => {
               md={6}
               sx={{
                 color: "black",
-                fontSize: w > 420 ? "4vmax" : "3vmax",
+                fontSize: w > 420 ? "3vmax" : "3vmax",
                 display: "flex",
                 alignItems: "center",
+                textAlign:w<420 && 'center'
               }}
             >
-              <div className="under">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+              <div className="under" style={{paddingRight:'1vw', paddingTop:w<420&& '3vh',paddingBottom:w<420 && "3vh"}}>
+              A company that is considered to be one of the leading consultation firms in the industry.
                   </div>
                 
             </Grid>
             <Grid item xs={12} md={6} sx={{ color: "#1976d2" }}>
               <Carousel
-                autoplay={true}
-                interval={1000}
+                autoPlay={true}
+                interval={3000}
                 dynamicHeight={"100vh"}
                 showThumbs={false}
                 showStatus={false}
+                infiniteLoop={true}
+                autoFocus={true}
                 style={{
                   display: "block",
                   paddingTop: "10vh",
@@ -52,13 +54,17 @@ const Hero = () => {
                 }}
               >
                 <div>
-                  <img src={require("./assets/image2.jpg")} />
+                  <img src={require("./assets/image7.jpg")} />
+                </div>
+                
+                <div>
+                  <img src={require("./assets/image3.jpg")} />
                 </div>
                 <div>
                   <img src={require("./assets/image4.jpg")} />
                 </div>
                 <div>
-                  <img src={require("./assets/image3.jpg")} />
+                  <img src={require("./assets/image1.jpg")} />
                 </div>
               </Carousel>
             </Grid>
