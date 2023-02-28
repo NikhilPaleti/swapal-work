@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import { Outlet, Link } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 const pages = ["Home", "About", "Services", "Contact"];
 
@@ -23,6 +23,8 @@ function NavBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+ 
 
   return (
     <AppBar position="fixed" sx={{ background: "#537FE7", color: "#E9F8F9" }}>
@@ -128,22 +130,27 @@ function NavBar() {
             ))} */}
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-                Home
+              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/`}>Home</Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-                About
+              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/about`}>About</Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }}  textAlign="center">
+              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/services`}>Services</Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-                Services
+              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/faq`}>FAQ</Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-                Contact
+              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/contact`}>Contact</Link>
               </Typography>
             </MenuItem>
           </Box>
