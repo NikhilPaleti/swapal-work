@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 var w = window.innerWidth;
 
-const Body = () => {
+const Body2 = () => {
 
   const handleClickScroll = () => {
     const element = document.getElementById('section');
@@ -28,55 +28,22 @@ const Body = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const classes=w>420?"lefthome":"centered"
   return (
     <>
-     <div>
-      <div
+    <div
         style={{
-          paddingTop: w > 420 ? "20vh" : "5vh",
-          paddingBottom: w > 420 ? "10vh" : "5vh",
-          marginLeft: "4vw",
-          marginRight: "4vw",
+          position: "relative",
+          marginTop: '0vh',
+          marginBottom: w<420 && '5vh',
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={1}>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              sx={{
-                color: "black",
-                fontSize: w > 420 ? "3vmax" : "3vmax",
-                display: "flex",
-                alignItems: "center",
-                textAlign:w<420 && 'center'
-              }}
-            >
-              <div className="under" style={{paddingRight:'1vw', paddingTop:w<420&& '3vh',paddingBottom:w<420 && "3vh"}}>
-              A company that is considered to be one of the leading consultation firms in the industry.<br/>
-              <Button variant="contained"
-                  sx={{
-                    height:w>420?'8vh':'6vh',
-                    width:w>420?'40vh':'30vh',
-                    fontFamily: "Poppins",
-                    background: "##A7B6BB",
-                    color: "white",
-                    borderRadius:'15px',
-                    marginTop:"2vh"
-                    
-                  }}
-                  onClick={handleClickScroll}
-                   >
-             See how we can help <span style={{display:'flex',justifyContent:'center'}}><ArrowDownwardIcon/></span></Button>
-                  </div>
-                
-            </Grid>
-            <Grid item xs={12} md={6} sx={{ color: "#1976d2" }}>
-              <Carousel
+         <Carousel
                 autoPlay={true}
                 interval={3000}
-                dynamicHeight={"100vh"}
+                //dynamicHeight={"100vh"}
                 showThumbs={false}
                 showStatus={false}
                 infiniteLoop={true}
@@ -86,6 +53,7 @@ const Body = () => {
                   paddingTop: "10vh",
                   marginLeft: "auto",
                   marginRight: "auto",
+                  
                 }}
               >
                 <div>
@@ -102,12 +70,39 @@ const Body = () => {
                   <img src={require("./assets/image1.jpg")} />
                 </div>
               </Carousel>
-            </Grid>
-          </Grid>
-        </Box>
+        <div
+          className={classes}
+          style={{
+            fontSize: w > 420 ? "4rem" : "1rem",
+            color:'white',
+            fontWeight:'bold',
+            height: "auto",
+            padding: "2vmax",
+            textAlign:w>420?"left": "center",
+          }}
+        >
+          A company providing solutions on multiple fronts. <br />
+          {w > 420 && (
+            <>
+    
+            <Button variant="contained"
+                  sx={{
+                    height:'8vh',
+                    width:'40vh',
+                    fontFamily: "Poppins",
+                    background: "##A7B6BB",
+                    color: "white",
+                    borderRadius:'15px'
+                    
+                  }}
+                  onClick={handleClickScroll}
+                   >
+             See how we can help <span style={{display:'flex',justifyContent:'center'}}><ArrowDownwardIcon/></span></Button>
+          </>
+          )}
+        </div>
       </div>
-    </div>
-      <div>
+      <div id="section">
         <div
           style={{
             paddingTop: w > 420 ? "10vh" : "1vh",
@@ -213,7 +208,7 @@ const Body = () => {
             fontFamily: "Poppins",
           }}
         >
-          <div className="under" id="section">Services</div>
+          <div className="under">Services</div>
         </Typography>
 
         <Grid container alignItems="center" justifyContent="center">
@@ -445,4 +440,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Body2;

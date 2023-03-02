@@ -2,6 +2,8 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+
 var w = window.innerWidth;
 
 const TrainingPage = () => {
@@ -30,13 +32,13 @@ const TrainingPage = () => {
             fontSize: w > 420 ? "2rem" : "1rem",
             height: "auto",
             padding: "2vmax",
+            textAlign: "center",
           }}
         >
-          Training Agency for Overseas Jobs <br />
+          OVERSEAS SERVICES <br />
           {w > 420 && (
             <span style={{ fontSize: w > 420 ? "1rem" : "0.75rem" }}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+              Earn while you Learn - Vocational Courses in Germany
             </span>
           )}
         </div>
@@ -65,115 +67,129 @@ const TrainingPage = () => {
           >
             <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt{" "}
+              EARN WHILE YOU LEARN & SETTLE IN GERMANY{" "}
             </span>
             <br />
             <br />
-            ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed.
-            Leo vel fringilla est ullamcorper eget nulla facilisi. Enim sit amet
-            venenatis urna cursus eget <br />
-            <br /> Maecenas pharetra convallis posuere morbi leo urna molestie
-            at. Pharetra magna ac placerat vestibulum lectus mauris ultrices
-            eros. Non quam lacus suspendisse faucibus interdum posuere.
-            <br /> <br /> Sit amet consectetur adipiscing elit pellentesque
-            habitant. Ultricies lacus sed turpis tincidunt id aliquet. Magna
-            eget est lorem ipsum dolor sit amet consectetur adipiscing. In
-            tellus integer
-            <br /> <br />{" "}
+            Hi +2 Students,
+            <br />
+            <br />
+            Did you complete your Schooling & Intermediate with 75%-80% & above
+            marks?
+            <br />
+            <br />
+            Do you want to Study in Germany that too{" "}
+            <span style={{ fontWeight: "bold" }}>FREE?</span> <br />
+            <br />& Also do you want to{" "}
+            <span style={{ fontWeight: "bold" }}>EARN</span> while Studying?
+            <br />
+            <br />
+            Is it possible??
+            <br />
+            <br />
+            <span style={{ fontWeight: "bold" }}>YES</span>, it is possible in
+            Germany!
+            <br />
+            <br />
+            Germany needs 5,00,000 skilled expats in 2023 year! Are you one of
+            them?
+            <br />
+            <br />
+            2/3/4 YEARS VOCATIONAL COURSES WITH{" "}
+            <span style={{ fontWeight: "bold" }}>CONFIRMED PLACEMENT</span>{" "}
+            <br />
+            <br />
+            <span style={{ fontWeight: "bold" }}>
+              Following are the Courses which you can choose & Build a Career
+              from:
+            </span>
+            <br />
+            <br />
+            * Nursing : * Physiotherapy : * Air Traffic Controller : * Ship
+            Mechanic :<br />
+            * IT specialist : * Bank clerk : * Aircraft Mechanic : * Specialist
+            in Mechatronics
+            <br />
+            * Electronics Technician : * Electrician : * Fitness Trainer : * IT
+            Technician <br />
+            * Hospitality Management : * Dietician Hotel Expert : * Baker : *
+            Cook or Chef <br />
+            * Metal & Electrical Profession : * Electrician / Industrial
+            Electrician : * Gardener
+            <br />
+            * Warehouse Logistic Specialist : * Automobile Profession : *
+            Cosmetics :<br />
+            * Salesmen/Women : * Industrial Clerk : * Spa & Wellness Specialist
+            <br />
+            <br />
+            <br />
+            <hr /> <br /> <br />{" "}
             <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
-              Feugiat scelerisque varius morbi enim nunc.
+              DIPLOMA VOCATIONAL TRAINING GERMANY
             </span>{" "}
             <br />
-            <br></br>Dignissim convallis aenean et tortor at risus viverra
-            adipiscing. Turpis egestas pretium aenean pharetra. Accumsan tortor
-            posuere ac ut consequat. Libero justo laoreet sit amet. Vitae
-            suscipit tellus mauris a diam maecenas sed. Sagittis nisl rhoncus
-            mattis rhoncus. Euismod nisi porta
-            <br /> <br /> lorem mollis aliquam ut. Placerat orci nulla
-            pellentesque dignissim enim. Venenatis lectus magna fringilla urna
-            porttitor rhoncus dolor.
-            <br /> <br /> Consectetur adipiscing elit pellentesque habitant
-            morbi tristique. Egestas sed tempus urna et. Erat imperdiet sed
-            euismod nisi porta.
-            <br /> <br /> Egestas pretium aenean pharetra magna ac placerat
-            vestibulum. Sit amet volutpat consequat mauris nunc congue nisi
-            vitae. Tortor consequat id porta nibh venenatis cras sed. Facilisi
-            nullam vehicula ipsum a arcu. Sit amet commodo nulla facilisi nullam
-            vehicula.
+            <br></br> The student gains both theoretical and practical knowledge
+            at the same time. It is a profession-related education which is
+            leading you towards a certain job. You can find Ausbildung for
+            almost anything. It’s a really good deal for people who finish their
+            basic education (12th Class) and want to go straight towards working
+            life, instead of studying at university.
             <br />
             <br />
-            <br /> <hr /> <br /> <br />{" "}
+            <span style={{ fontWeight: "bold" }}> ELIGIBILITY:</span>
+           
+            <br /><br />
+            A) 10+2 with Minimum 80% Marks.<br />
+B) Education up to 10+2 level in English Medium<br />
+C) Minimum B-1 Level of German Language before applying for Ausbuilding.<br />
+D) Minimum Age 18 Years up to 25 Years.<br />
+E) Students should have good English level for Learning.<br />
+ <br />{" "}
             <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
-              Feugiat scelerisque varius morbi enim nunc.
+            PROGRAM ADVANTAGE:
             </span>{" "}
-            <br />
-            <br></br> Purus viverra accumsan in nisl nisi scelerisque eu. Felis
-            donec et odio pellentesque. Laoreet id donec ultrices tincidunt arcu
-            non. Sed sed risus pretium quam vulputate. Lacus viverra vitae
-            congue eu consequat ac. Sodales ut eu sem integer vitae. Quam
-            vulputate dignissim suspendisse in. Aliquet porttitor lacus luctus
-            accumsan tortor posuere ac ut. Risus in hendrerit gravida rutrum
-            quisque non tellus orci. Pellentesque habitant morbi tristique
-            senectus. A erat nam at lectus urna duis. Fermentum et sollicitudin
-            ac orci phasellus egestas. Sapien nec sagittis aliquam malesuada
-            bibendum. Sem viverra aliquet eget sit amet tellus. Nisl suscipit
-            adipiscing bibendum est ultricies
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididuntut labore et dolore magna aliqua. Id porta
-            nibh venenatis cras sed. Leo vel fringilla est ullamcorper eget
-            nulla facilisi. Enim sit amet venenatis urna cursus eget
-            <br />
-            <br />
-            <br /> <hr /> <br /> <br />{" "}
-            <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
-              Feugiat scelerisque varius morbi enim nunc.
-            </span>{" "}
-            <br />
-            <br></br>
-            <div>
-              <div
-                className="imgshadow"
-                style={{
-                  color: "white",
-                  textAlign: "center",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  display: "block",
-                  background: "#537FE7",
-                  height: w > 420 ? "20vh" : "15vh",
-                  width: w > 420 ? "30vw" : "80vw",
-                  paddingTop: "1vh",
-                  paddingBottom: "1vh",
+            <br /><br/>
+            1)  Training of Students in specifically Job Oriented fields.<br/>
+2)  Combination of Classroom and Practical Training.<br/>
+3)  Suitable for students who want to start work directly after School<br/>
+4)  Training has no Cost.<br/>
+5)  Students start earning during the Ausbildung.<br/>
+6) After completion of training students are employed in their respective area of training.<br/>
 
-                  borderRadius: "2vmax",
-                }}
-              >
-                <h3> Get started today</h3>
+
+            <br></br>
+            <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
+            EARNING POTENTIAL OF THE COURSES
+            </span>{" "}
+            <br /><br/>All training Programs are Job oriented and students work during their study in our partner Companies.<br/><br/>
+
+Students receive Euros 750 per month during training.<br/><br/>
+
+After successful completion of course the Students start working with minimum approximate salary of Euros 2500 per month. 
+<br/><br/><hr/>
+                <h3> APPLY NOW</h3>
 
                 <Button
                   variant="contained"
                   sx={{
                     fontFamily: "Poppins",
-                    background: "#E9F8F9;",
-                    color: "black",
-                    fontWeight:'600'
+                    background: "##A7B6BB",
+                    color: "white",
+                    fontWeight: "600",
                   }}
                 >
+                   <Link style={{textDecoration: 'none',color: "white"}} to={`/contact`}>
                   Contact
+                  </Link>
                 </Button>
-              </div>
-            </div>
-            .
+             
           </Grid>
           <Grid
             item
             xs={12}
             md={4.5}
             sx={{
-              height:"100%",
+              height: "100%",
               backgroundColor: "white",
               borderRadius: "1rem",
               margin: "1vmax",
@@ -181,32 +197,26 @@ const TrainingPage = () => {
             }}
           >
             <span style={{ fontSize: "2vmax", fontWeight: "bold" }}>
-              Training Generic Heading.
-            </span><br/><br/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-            dolor purus non enim. Faucibus et molestie ac feugiat sed lectus
-            vestibulum. Id ornare arcu odio ut sem. Vulputate mi sit amet mauris
-            commodo quis imperdiet massa tincidunt. Pharetra convallis posuere
-            morbi leo urna molestie at. Mattis molestie a iaculis at erat
-            pellentesque adipiscing commodo elit. Vestibulum mattis ullamcorper
-            velit sed ullamcorper. Enim diam vulputate ut pharetra sit amet
-            aliquam id diam. Eu turpis egestas pretium aenean pharetra magna ac
-            placerat. Commodo quis imperdiet massa tincidunt nunc pulvinar
-            sapien et. Sagittis orci a scelerisque purus semper. Sed euismod
-            nisi porta lorem. Et pharetra pharetra massa massa. Tristique
-            senectus et netus et malesuada. Sit amet dictum sit amet justo
-            donec. Gravida in fermentum et sollicitudin. Sit amet consectetur
-            adipiscing elit ut aliquam purus sit. Nisi quis eleifend quam
-            adipiscing vitae proin sagittis nisl rhoncus. Mollis aliquam ut
-            porttitor leo a diam sollicitudin tempor id. Luctus venenatis lectus
-            magna fringilla urna porttitor. Tempor orci dapibus ultrices in
-            iaculis nunc sed. Sed turpis tincidunt id aliquet risus feugiat in
-            ante. Tellus mauris a diam maecenas sed enim ut. Cursus eget nunc
-            scelerisque viverra mauris in aliquam sem. Dignissim suspendisse in
-            est ante in. Ridiculus mus mauris vitae ultricies leo integer
-            malesuada. Sapien pellentesque habitant morbi tristique senectus.
-            Nibh praesent tristique magna sit amet purus gravida quis blandit.
+            WHAT WE DO:
+            </span>
+            <br />
+            <br />
+            <ul>
+              <li>
+            Candidate Eligibility Verification</li>
+            <li>We teach you German Language through online & offline classes.</li>
+            <li>Resume Preparation.</li>
+            <li>	Admission arrangements in Germany.</li>
+            <li>	All Documents Translation to German Language. </li>
+            <li>	Attestation of all Translated Documents at German Embassy.</li>
+            <li>VISA Documentation & Interview Preparation.</li>
+            <li>Processing the admission formalities with concerned University.</li>
+            <li>	Travel Insurance Cover.</li>
+            <li>	Guide you in Flight Ticket Booking</li>
+            <li>	Pre Departure & Post Arrival Support, Accommodation Arrangement in Germany.</li>
+            <li>	Handhold till you are settled in Germany.</li>
+</ul>
+
           </Grid>
         </Grid>
       </Box>

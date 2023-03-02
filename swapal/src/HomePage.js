@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from './Hero'
+
 import Body from './Body'
+import Body2 from './Body2'
 
 const HomePage = () => {
   return (
     <>
-    <Hero/>
-    <Body/>
+    <Body2/>
     </>
   )
 }

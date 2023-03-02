@@ -3,45 +3,74 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 var w = window.innerWidth;
 const FacilitationPage = () => {
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('section');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+ 
+  const classes=w>420?"left1":"centered"
   return (
     <>
       <div
         style={{
           position: "relative",
-          marginTop: w > 420 ? "20vh" : "10vh",
+          marginTop: w > 420 ? "0vh" : "10vh",
           display: "flex",
           justifyContent: "center",
         }}
       >
         <img
           style={{
-            maxWidth: w > 420 ? "90vw" : "90vw",
-            maxHeight: "50vh",
-            opacity: "0.8",
-            borderRadius: "1rem",
+            maxWidth: w > 420 ? "100%" : "90vw",
+            maxHeight: "60%",
+           
+           
           }}
-          src={require("./assets/image8.jpg")}
+          src={require("./assets/image6.jpg")}
         />
         <div
-          className="centered glass"
+          className={classes}
           style={{
-            fontSize: w > 420 ? "2rem" : "1.5rem",
+            fontSize: w > 420 ? "4rem" : "1rem",
+            color:'white',
+            fontWeight:'bold',
             height: "auto",
             padding: "2vmax",
-            textAlign: "center",
+            textAlign:w>420?"left": "center",
           }}
         >
-          Faciltation Random Heading <br />
+          Facilitation Services<br />
           {w > 420 && (
-            <span style={{ fontSize: w > 420 ? "1rem" : "0.75rem" }}>
-              Insert WIDE image here so that it looks better Lorem Ipsum Dolor
-            </span>
+            <>
+            <span style={{ fontSize: w > 420 ? "1.5rem" : "0.75rem" }}>Avail our business facilitation services</span>
+            <br/>
+            <Button variant="contained"
+                  sx={{
+                    height:'8vh',
+                    width:'40vh',
+                    fontFamily: "Poppins",
+                    background: "##A7B6BB",
+                    color: "white",
+                    borderRadius:'15px'
+                    
+                  }}
+                  onClick={handleClickScroll}
+                   >
+             See how we can help <span style={{display:'flex',justifyContent:'center'}}><ArrowDownwardIcon/></span></Button>
+          </>
           )}
         </div>
       </div>
-      <Box
+      <div id="section"></div>
+      <Box 
         sx={{
           flexGrow: 1,
           marginTop: w > 420 ? "10vh" : "5vh",
@@ -147,39 +176,7 @@ const FacilitationPage = () => {
               lectus
               <br />
               <br />
-              <div>
-                <div
-                  className="imgshadow"
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    display: "block",
-                    background: "#537FE7",
-                    height: w > 420 ? "15vh" : "12vh",
-                    width: w > 420 ? "20vw" : "50vw",
-                    paddingTop: "1vh",
-                    paddingBottom: "1vh",
-
-                    borderRadius: "2vmax",
-                  }}
-                >
-                  <h3 style={{ margin: "1vmax" }}> Contact us today</h3>
-
-                  <Button
-                    variant="contained"
-                    sx={{
-                      fontFamily: "Poppins",
-                      background: "#E9F8F9;",
-                      color: "black",
-                      fontWeight: "600",
-                    }}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              </div>
+              
               <br />
               <br />
             </Grid>
@@ -215,6 +212,7 @@ const FacilitationPage = () => {
           </Grid>
         </Grid>
       </Box>
+      
     </>
   );
 };

@@ -14,11 +14,12 @@ import Faq from "./Faq";
 import Contact from "./Contact";
 import About from "./About";
 import Services from './Services'
+import StickyWhatsapp from "./StickyWhatsapp";
 
 function App() {
   return (
     <>
-      
+      <StickyWhatsapp/>
       <BrowserRouter>
       <NavBar />
         <Routes>
@@ -26,7 +27,7 @@ function App() {
           <Route path="/training" element={<TrainingPage />} />
           <Route path="/hydroponics" element={<HydroponicsPage />} />
           <Route
-            path="/constructionconsultancy"
+            path="/construction"
             element={<ConstructionPage />}
           />
           <Route path="/facilitation" element={<FacilitationPage />} />

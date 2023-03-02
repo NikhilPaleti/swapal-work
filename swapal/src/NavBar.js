@@ -24,8 +24,6 @@ function NavBar() {
     setAnchorElNav(null);
   };
 
- 
-
   return (
     <AppBar position="fixed" sx={{ background: "#537FE7", color: "#E9F8F9" }}>
       <Container maxWidth="xl">
@@ -86,11 +84,56 @@ function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/`}
+                  >
+                    Home
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/facilitation`}
+                  >
+                    Facilitation
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/training`}
+                  >
+                    Training
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/hydroponics`}
+                  >
+                    Hydroponics
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/construction`}
+                  >
+                    Construction
+                  </Link>
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -130,29 +173,60 @@ function NavBar() {
             ))} */}
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/`}>Home</Link>
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/`}
+                >
+                  Home
+                </Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/about`}>About</Link>
-              </Typography>
-            </MenuItem>
-            <MenuItem>
-              <Typography sx={{ fontFamily: "Poppins" }}  textAlign="center">
-              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/services`}>Services</Link>
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/facilitation`}
+                >
+                  Facilitation
+                </Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
-              <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/faq`}>FAQ</Link>
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/training`}
+                >
+                  Training
+                </Link>
               </Typography>
             </MenuItem>
             <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/hydroponics`}
+                >
+                  Hydroponics
+                </Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/construction`}
+                >
+                  Construction
+                </Link>
+              </Typography>
+            </MenuItem>
+
+            {/* <MenuItem>
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
               <Link style={{textDecoration: 'none',color: "#E9F8F9"}} to={`/contact`}>Contact</Link>
               </Typography>
-            </MenuItem>
+            </MenuItem> */}
           </Box>
         </Toolbar>
       </Container>

@@ -17,8 +17,9 @@ const Bottom = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container direction="column" alignItems="center">
-          <Grid item xs={12}>
+        <Grid container>
+          <Grid item xs={12} md={6} >
+            
             <Typography
               color="#E9F8F9"
               sx={{
@@ -29,24 +30,24 @@ const Bottom = () => {
             >
               Swapal Facilitators &amp; Promoters Pvt.Ltd | 2023
             </Typography>
-          </Grid>
-          <Grid item xs={12}>
+      
             <Typography color="#E9F8F9" sx={{ fontFamily: "Poppins" }}>
               We guide you to the land of possibilities.
             </Typography>
           </Grid>
-          <Grid item xs={12} sx={{ marginTop: "2vh" }}>
-            <Typography>
+          <Grid item xs={12} md={6} sx={{marginTop:"1vh", textAlign:w<420?"center":"right"}} >
+          <Typography>
               <a target="_blank" rel="noopener" href="https://instagram.com">
-                <InstagramIcon sx={{ color: "#E9F8F9" }} />
+                <InstagramIcon sx={{ color: "#E9F8F9", fontSize:'2rem' }} />
               </a>{" "}
-              <a target="_blank" rel="noopener" href="https://whatsapp.com">
-              <WhatsAppIcon sx={{ color: "#E9F8F9" }} /></a>{" "}
-              <a target="_blank" rel="noopener" href="mailto:someone@example.com">
-              <MailOutline sx={{ color: "#E9F8F9" }} />
+              <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919391952329">
+              <WhatsAppIcon sx={{ color: "#E9F8F9",fontSize:'2rem' }} /></a>{" "}
+              <a target="_blank" rel="noopener" href="someone@example.com">
+              <MailOutline sx={{ color: "#E9F8F9",fontSize:'2rem' }} />
               </a>
             </Typography>
           </Grid>
+          
         </Grid>
       </Container>
     </Box>
