@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b522f83f.css",
-    "main.js": "/static/js/main.f0afccea.js",
+    "main.js": "/static/js/main.0dcbf4c9.js",
     "static/media/training.jpg": "/static/media/training.43ff1b0840ec3c6287e5.jpg",
     "static/media/image6.jpg": "/static/media/image6.f5d64d4ffbdb1a0e132f.jpg",
     "static/media/image3.jpg": "/static/media/image3.78a30544836eefe380b2.jpg",
@@ -17,15 +17,16 @@
     "static/media/image11.jpg": "/static/media/image11.7b2c038fefb40ee764bf.jpg",
     "static/media/image7.jpg": "/static/media/image7.56418b2797d6a76d6fe7.jpg",
     "static/media/image14.jpg": "/static/media/image14.a05e1c57275cf2dd56f7.jpg",
+    "static/media/image_swarna.jpeg": "/static/media/image_swarna.15f6dcd782298be1aec3.jpeg",
     "static/media/image13.jpg": "/static/media/image13.5a01b297db9dfb5f6bc7.jpg",
     "static/media/image8.jpg": "/static/media/image8.9c327f297ef1b195ca98.jpg",
     "static/media/place1.jpg": "/static/media/place1.b2c2bc7390b86dc461ec.jpg",
     "index.html": "/index.html",
     "main.b522f83f.css.map": "/static/css/main.b522f83f.css.map",
-    "main.f0afccea.js.map": "/static/js/main.f0afccea.js.map"
+    "main.0dcbf4c9.js.map": "/static/js/main.0dcbf4c9.js.map"
   },
   "entrypoints": [
     "static/css/main.b522f83f.css",
-    "static/js/main.f0afccea.js"
+    "static/js/main.0dcbf4c9.js"
   ]
 }
