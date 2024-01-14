@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.b522f83f.css",
-    "main.js": "/static/js/main.1f3f779a.js",
+    "main.js": "/static/js/main.30f62d7e.js",
     "static/media/training.jpg": "/static/media/training.43ff1b0840ec3c6287e5.jpg",
     "static/media/image6.jpg": "/static/media/image6.f5d64d4ffbdb1a0e132f.jpg",
     "static/media/image3.jpg": "/static/media/image3.78a30544836eefe380b2.jpg",
+    "static/media/image_circleofnurses.jpg": "/static/media/image_circleofnurses.1e220961f010ff014334.jpg",
     "static/media/hero.jpg": "/static/media/hero.9adc113669d45630a798.jpg",
     "static/media/image12.jpg": "/static/media/image12.65fefbe0d30b4bdc68a7.jpg",
     "static/media/image2.jpg": "/static/media/image2.9625d4bdf576b43136d4.jpg",
     "static/media/image4.jpg": "/static/media/image4.4c88827b3f7f4f13c475.jpg",
+    "static/media/image_scope.jpg": "/static/media/image_scope.f9ef5c80b2d3572f1dc9.jpg",
+    "static/media/image_nurseworking.jpg": "/static/media/image_nurseworking.6c60f846fb16fa53ccff.jpg",
     "static/media/image5.jpg": "/static/media/image5.e88f557f4188a078a037.jpg",
+    "static/media/image_nursepose.jpg": "/static/media/image_nursepose.418a560854f50c952143.jpg",
     "static/media/image9.jpg": "/static/media/image9.1194d65891b40bb1bdfe.jpg",
     "static/media/image10.jpg": "/static/media/image10.8ed0c42bfe894f66bbe6.jpg",
     "static/media/image1.jpg": "/static/media/image1.0586af77d6d7755449a9.jpg",
@@ -23,10 +27,10 @@
     "static/media/place1.jpg": "/static/media/place1.b2c2bc7390b86dc461ec.jpg",
     "index.html": "/index.html",
     "main.b522f83f.css.map": "/static/css/main.b522f83f.css.map",
-    "main.1f3f779a.js.map": "/static/js/main.1f3f779a.js.map"
+    "main.30f62d7e.js.map": "/static/js/main.30f62d7e.js.map"
   },
   "entrypoints": [
     "static/css/main.b522f83f.css",
-    "static/js/main.1f3f779a.js"
+    "static/js/main.30f62d7e.js"
   ]
 }
