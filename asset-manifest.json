@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.30a481df.css",
-    "main.js": "/static/js/main.aab599b4.js",
+    "main.js": "/static/js/main.7f426a46.js",
     "static/media/training.jpg": "/static/media/training.43ff1b0840ec3c6287e5.jpg",
     "static/media/image6.jpg": "/static/media/image6.f5d64d4ffbdb1a0e132f.jpg",
     "static/media/image3.jpg": "/static/media/image3.78a30544836eefe380b2.jpg",
@@ -9,6 +9,7 @@
     "static/media/hero.jpg": "/static/media/hero.9adc113669d45630a798.jpg",
     "static/media/image12.jpg": "/static/media/image12.65fefbe0d30b4bdc68a7.jpg",
     "static/media/image2.jpg": "/static/media/image2.9625d4bdf576b43136d4.jpg",
+    "static/media/image_airport.jpeg": "/static/media/image_airport.6f9a36b7384fb7c7ec98.jpeg",
     "static/media/image4.jpg": "/static/media/image4.4c88827b3f7f4f13c475.jpg",
     "static/media/image_scope.jpg": "/static/media/image_scope.f9ef5c80b2d3572f1dc9.jpg",
     "static/media/image_nurseworking.jpg": "/static/media/image_nurseworking.6c60f846fb16fa53ccff.jpg",
@@ -27,10 +28,10 @@
     "static/media/place1.jpg": "/static/media/place1.b2c2bc7390b86dc461ec.jpg",
     "index.html": "/index.html",
     "main.30a481df.css.map": "/static/css/main.30a481df.css.map",
-    "main.aab599b4.js.map": "/static/js/main.aab599b4.js.map"
+    "main.7f426a46.js.map": "/static/js/main.7f426a46.js.map"
   },
   "entrypoints": [
     "static/css/main.30a481df.css",
-    "static/js/main.aab599b4.js"
+    "static/js/main.7f426a46.js"
   ]
 }
