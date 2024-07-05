@@ -15,6 +15,12 @@ import Contact from "./Contact";
 import About from "./About";
 import Services from './Services'
 import StickyWhatsapp from "./StickyWhatsapp";
+import WorkPermit from "./WorkPermit";
+import Study from "./Study";
+import TRP from "./TRP";
+import LiveJob from "./LiveJob";
+import OpportunityCard from "./OpportunityCard";
+import SkillDevelopment from "./SkillDevelopment";
 
 function App() {
   return (
@@ -25,16 +31,17 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/training" element={<TrainingPage />} />
-          <Route path="/hydroponics" element={<HydroponicsPage />} />
-          <Route
-            path="/construction"
-            element={<ConstructionPage />}
-          />
+          {/* <Route path="/hydroponics" element={<HydroponicsPage />} /> */}
+          <Route path="/WorkPermit" element={<WorkPermit />} />
+          {/* <Route path="/study" element={<Study />} /> */}
+          <Route path="/trp" element={<TRP />} />
+          <Route path="/skilldevelopment" element={<SkillDevelopment />} />
           <Route path="/facilitation" element={<FacilitationPage />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/services" element={<Services/>} />
+          <Route path="/opportunitycard" element={<OpportunityCard/>} />
         </Routes>
       </BrowserRouter>
 

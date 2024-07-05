@@ -40,9 +40,9 @@ const Bottom = () => {
               <a target="_blank" rel="noopener" href="https://instagram.com">
                 <InstagramIcon sx={{ color: "#E9F8F9", fontSize:'2rem' }} />
               </a>{" "}
-              <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919391952329">
+              <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919951247896">
               <WhatsAppIcon sx={{ color: "#E9F8F9",fontSize:'2rem' }} /></a>{" "}
-              <a target="_blank" rel="noopener" href="someone@example.com">
+              <a target="_blank" rel="noopener" href="info@swapalfacilitators.com">
               <MailOutline sx={{ color: "#E9F8F9",fontSize:'2rem' }} />
               </a>
             </Typography>

@@ -7,8 +7,13 @@ body {
   background-color:#E9F8F9;
 }
 
-
-
+table, td, tr, th{
+  text-align: center;
+  border: 1px solid;
+  /* border-collapse: collapse; */
+  padding: 5px;
+  /* border-radius: 200px; */
+}
 
 
 .under {

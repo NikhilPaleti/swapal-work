@@ -52,7 +52,7 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            Swapal Facilitators &amp; Promoters Pvt.Ltd
+            Swapal Facilitators &amp; Promoters Pvt. Ltd.
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -100,7 +100,7 @@ function NavBar() {
                     style={{ textDecoration: "none", color: "black" }}
                     to={`/facilitation`}
                   >
-                    Facilitation
+                    Nursing
                   </Link>
                 </Typography>
               </MenuItem>
@@ -118,9 +118,9 @@ function NavBar() {
                 <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
                   <Link
                     style={{ textDecoration: "none", color: "black" }}
-                    to={`/hydroponics`}
+                    to={`/skilldevelopment`}
                   >
-                    Hydroponics
+                    Skill Development
                   </Link>
                 </Typography>
               </MenuItem>
@@ -128,9 +128,19 @@ function NavBar() {
                 <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
                   <Link
                     style={{ textDecoration: "none", color: "black" }}
-                    to={`/construction`}
+                    to={`/WorkPermit`}
                   >
-                    Construction
+                    Work Permit
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/opportunitycard`}
+                  >
+                    Opportuni
                   </Link>
                 </Typography>
               </MenuItem>
@@ -187,7 +197,7 @@ function NavBar() {
                   style={{ textDecoration: "none", color: "#E9F8F9" }}
                   to={`/facilitation`}
                 >
-                  Facilitation
+                  Nursing
                 </Link>
               </Typography>
             </MenuItem>
@@ -205,9 +215,9 @@ function NavBar() {
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
                 <Link
                   style={{ textDecoration: "none", color: "#E9F8F9" }}
-                  to={`/hydroponics`}
+                  to={`/WorkPermit`}
                 >
-                  Hydroponics
+                  Work Permit
                 </Link>
               </Typography>
             </MenuItem>
@@ -215,9 +225,19 @@ function NavBar() {
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
                 <Link
                   style={{ textDecoration: "none", color: "#E9F8F9" }}
-                  to={`/construction`}
+                  to={`/opportunitycard`}
                 >
-                  Construction
+                  Germany Opportunity Card
+                </Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/skilldevelopment`}
+                >
+                  Skill Development
                 </Link>
               </Typography>
             </MenuItem>
