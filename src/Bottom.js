@@ -37,12 +37,12 @@ const Bottom = () => {
           </Grid>
           <Grid item xs={12} md={6} sx={{marginTop:"1vh", textAlign:w<420?"center":"right"}} >
           <Typography>
-              <a target="_blank" rel="noopener" href="https://instagram.com">
+              {/* <a target="_blank" rel="noopener" href="https://instagram.com">
                 <InstagramIcon sx={{ color: "#E9F8F9", fontSize:'2rem' }} />
-              </a>{" "}
+              </a>{" "} */}
               <a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=919951247896">
               <WhatsAppIcon sx={{ color: "#E9F8F9",fontSize:'2rem' }} /></a>{" "}
-              <a target="_blank" rel="noopener" href="info@swapalfacilitators.com">
+              <a target="_blank" rel="noopener" href="mailto:info@swapalfacilitators.com">
               <MailOutline sx={{ color: "#E9F8F9",fontSize:'2rem' }} />
               </a>
             </Typography>
