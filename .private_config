@@ -1,0 +1,5 @@
+module.exports = {
+    PORT: 24242,
+    RZPAY_SECRET:"SbFXcdq4VTCneuZRDZnbm1OY",
+    RZPAY_ID: "rzp_test_SAn2y7ZXC68PFs"
+  };

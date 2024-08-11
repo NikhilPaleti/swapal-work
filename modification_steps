@@ -1,0 +1,7 @@
+Create Page (Don't Delete. Backup is good.)
+To add/remove a page - 
+1. Goto App.js 
+2. Add, or Comment the <Route> tag for the specific page. Comment the import as well. 
+3. Goto NavBar.js 
+4. Add, Comment, or Modify <MenuItem> for the change that is required. Remember - There are 2 complete sets of <MenuItem> lists. One is for Desktop, one is for phone, both must be changed.
+

@@ -52,10 +52,10 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            Swapal Facilitators &amp; Promoters Pvt. Ltd.
+            {/* Swapal Facilitators &amp; Promoters Pvt. Ltd. */}
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -101,6 +101,16 @@ function NavBar() {
                     to={`/facilitation`}
                   >
                     Nursing
+                  </Link>
+                </Typography>
+              </MenuItem>
+              <MenuItem>
+                <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/hydroponics`}
+                  >
+                    Hydroponics
                   </Link>
                 </Typography>
               </MenuItem>
@@ -205,6 +215,16 @@ function NavBar() {
               <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
                 <Link
                   style={{ textDecoration: "none", color: "#E9F8F9" }}
+                  to={`/hydroponics`}
+                >
+                  Hydroponics
+                </Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography sx={{ fontFamily: "Poppins" }} textAlign="center">
+                <Link
+                  style={{ textDecoration: "none", color: "#E9F8F9" }}
                   to={`/training`}
                 >
                   Training
@@ -254,3 +274,4 @@ function NavBar() {
   );
 }
 export default NavBar;
+
