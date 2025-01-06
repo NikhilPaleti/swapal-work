@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a4b0e88.css",
-    "main.js": "/static/js/main.2ffd8c2a.js",
+    "main.css": "/static/css/main.6f0193ea.css",
+    "main.js": "/static/js/main.e8608160.js",
     "static/media/training.jpg": "/static/media/training.43ff1b0840ec3c6287e5.jpg",
     "static/media/image6.jpg": "/static/media/image6.f5d64d4ffbdb1a0e132f.jpg",
     "static/media/image3.jpg": "/static/media/image3.78a30544836eefe380b2.jpg",
@@ -19,6 +19,8 @@
     "static/media/image9.jpg": "/static/media/image9.1194d65891b40bb1bdfe.jpg",
     "static/media/image10.jpg": "/static/media/image10.8ed0c42bfe894f66bbe6.jpg",
     "static/media/image1.jpg": "/static/media/image1.0586af77d6d7755449a9.jpg",
+    "static/media/appr_2.jpg": "/static/media/appr_2.d9126b40035030600df6.jpg",
+    "static/media/appr_1.jpg": "/static/media/appr_1.3b78e3f98c8d3dd8b036.jpg",
     "static/media/logo.png": "/static/media/logo.f021f279fd8853186322.png",
     "static/media/image11.jpg": "/static/media/image11.7b2c038fefb40ee764bf.jpg",
     "static/media/image7.jpg": "/static/media/image7.56418b2797d6a76d6fe7.jpg",
@@ -28,11 +30,11 @@
     "static/media/image8.jpg": "/static/media/image8.9c327f297ef1b195ca98.jpg",
     "static/media/place1.jpg": "/static/media/place1.b2c2bc7390b86dc461ec.jpg",
     "index.html": "/index.html",
-    "main.3a4b0e88.css.map": "/static/css/main.3a4b0e88.css.map",
-    "main.2ffd8c2a.js.map": "/static/js/main.2ffd8c2a.js.map"
+    "main.6f0193ea.css.map": "/static/css/main.6f0193ea.css.map",
+    "main.e8608160.js.map": "/static/js/main.e8608160.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a4b0e88.css",
-    "static/js/main.2ffd8c2a.js"
+    "static/css/main.6f0193ea.css",
+    "static/js/main.e8608160.js"
   ]
 }
