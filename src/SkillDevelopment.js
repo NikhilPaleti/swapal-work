@@ -190,12 +190,7 @@ const SkillDevelopment = () => {
                 </span>
                 <br />
                 Online based interaction led by Doctors/ Faculty in Nursing/Languages/Management /IT having ample experience in the relevant area. Training delivery also by veterans who have industry & academic experience.
-                <br /> <br />
-                <hr />
-                <br />
-                <span style={{ fontSize: "1.5vmax", fontWeight: "bold" }}>
-                    Course fees Rs. 8,26,000/- with GST.
-                </span>
+                
                 
             </Grid>
           </Grid>
