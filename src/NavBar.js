@@ -130,7 +130,7 @@ function NavBar() {
                     style={{ textDecoration: "none", color: "black" }}
                     to={`/skilldevelopment`}
                   >
-                    Skill Development
+                    Ausbildung
                   </Link>
                 </Typography>
               </MenuItem>
@@ -257,7 +257,7 @@ function NavBar() {
                   style={{ textDecoration: "none", color: "#E9F8F9" }}
                   to={`/skilldevelopment`}
                 >
-                  Skill Development
+                  Ausbildung
                 </Link>
               </Typography>
             </MenuItem>
